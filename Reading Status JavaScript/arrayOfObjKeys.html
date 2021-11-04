@@ -6,13 +6,15 @@
     <body>
         <header>Array of Object Keys</header>
         <script>
-            let obj = {
+             let obj = {
   b: 2,
   a: 1,
   c: 3,
 };
-const arr = [a, b, c];
-arr.toUpperCase()
+let objKeys = Object.keys(obj);
+let upperCase = objKeys.map((key) => key.toUpperCase())
+console.log(upperCase);
+console.log(obj);
         </script>
     </body>
 </html>
